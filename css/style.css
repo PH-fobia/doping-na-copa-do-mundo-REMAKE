@@ -416,6 +416,18 @@ h3.sub-heading::after {
     margin-top: 50px;
 }
 
+.objectives-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.team-list {
+    list-style: none;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
 .card {
     position: relative;
     background: linear-gradient(135deg, 
@@ -703,6 +715,15 @@ footer p:first-child {
         gap: 20px;
     }
     
+    .objectives-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .team-list {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+    }
+    
     .highlight-box {
         padding: 20px;
         margin-bottom: 20px;
@@ -759,9 +780,22 @@ footer p:first-child {
         padding: 30px 15px;
     }
     
-    th, td {
-        padding: 10px 8px;
-        font-size: 0.85rem;
+    .card-grid {
+        gap: 15px;
+    }
+    
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .logo-container img {
+        width: 50px;
+        height: 50px;
     }
 }
 
